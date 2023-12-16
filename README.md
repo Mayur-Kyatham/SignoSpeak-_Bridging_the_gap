@@ -10,7 +10,7 @@ By recognizing and translating hand and body movements into text and emoticons,
 offers a bridge between sign language and the written word, making it an invaluable tool for 
 individuals who rely on sign language to communicate. Additionally, the ability to recognize 
 and respond to various gestures and emojis provides an inclusive and interactive platform for 
-cross-cultural communication.
+cross-cultural communication. 
 
 "SignoSpeak" represents a significant leap towards fostering inclusivity, breaking down 
 communication barriers, and promoting effective and expressive interaction for individuals 
