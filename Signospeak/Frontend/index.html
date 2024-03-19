@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+    <!-- ===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>SignoSpeak</title>
+  </head>
+
+  <body>
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- chatbot -->
+    <div id="chatbotContainer" class="chatbot-container">
+      <button class="closebutton" onclick="closeChatbot()">&times;</button>
+      <div class="chat-container">
+        <div class="chat" id="chat">
+          <div class="bot-message">Chatbot: Hello! How can I assist you?</div>
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            id="userInput"
+            class="user-input"
+            placeholder="Type your message..."
+          />
+          <button onclick="sendMessage()" class="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+
+        <div class="logo">
+          <h2>SignoSpeak</h2>
+        </div>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="#">SignoSpeak</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="/Frontend/index.html">Home</a></li>
+            <!-- <li><a href="/Frontend/language.html">Language</a></li> -->
+            <li><a href="/Frontend/learn.html">Learn</a></li>
+            <li><a href="/Frontend/try it out.html">Try it Out</a></li>
+            <li><a href="/Frontend/blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- THE PROBLEM AND SOLUTION -->
+    <section class="hero-section">
+      <div class="hero">
+        <h2>Barriers while <span class="highlight">Communicating!</span></h2>
+        <p>
+          Communication can be tough when someone has trouble speaking, like
+          difficulty pronouncing words or problems with the flow of speech. This
+          can happen due to speech disorders, brain conditions, or if someone is
+          learning a new language. It might make the person feel frustrated or
+          isolated, and others might not understand them well. Technology and
+          therapies, like speech devices and counseling, can help. It's
+          important for everyone to be aware and supportive, using patience and
+          understanding to make communication easier for everyone.
+        </p>
+      </div>
+      <div class="img">
+        <img src="/images/woman confused.png" alt="woman confused" />
+        <img src="/images/signlanguage.png" alt="woman doing sign language" />
+      </div>
+    </section>
+
+    <section class="hero-section">
+      <div class="img">
+        <img src="/images/talking.jpg" alt="understanding" />
+      </div>
+      <div class="hero">
+        <h2>
+          Discover the easiest
+          <span class="highlight">Sign Language translation</span> platform!
+        </h2>
+        <p>
+          Communication can be tough when someone has trouble speaking, like
+          difficulty pronouncing words or problems with the flow of speech. This
+          can happen due to speech disorders, brain conditions, or if someone is
+          learning a new language. It might make the person feel frustrated or
+          isolated, and others might not understand them well. Technology and
+          therapies, like speech devices and counseling, can help. It's
+          important for everyone to be aware and supportive, using patience and
+          understanding to make communication easier for everyone.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US? -->
+
+    <header>
+      <h1 class="responsive-heading">
+        A few reasons why you should use SignoSpeak today
+      </h1>
+    </header>
+    <div class="card-list">
+      <a href="/Frontend/blog.html" class="card-item">
+        <img src="/images/card1.jpg" alt="Card Image" />
+        <h3>
+          Communicate<span class="highlight">Quickly</span>and
+          <span class="highlight">Effectively </span>
+        </h3>
+      </a>
+      <a href="/Frontend/blog.html" class="card-item">
+        <img src="/images/card2.jpg" alt="Card Image" />
+        <h3>
+          Learning a new language <span class="highlight">can be Fun</span>
+        </h3>
+      </a>
+
+      <a href="/Frontend/blog.html" class="card-item">
+        <img src="/images/card3.jpg" alt="Card Image" />
+        <h3>
+          SignoSpeak is a very <span class="highlight">Powerful tool</span>
+        </h3>
+      </a>
+    </div>
+
+    <!-- CURIOSITIES -->
+    <header>
+      <h1 class="responsive-heading">Common Curiosities</h1>
+      <p class="heading">
+        It is common to see some classic mistakes about the deaf community,
+        especially when you are just starting to learn about it.
+      </p>
+      <p class="heading">Check out some curiosities you need to know:</p>
+    </header>
+
+    <div class="qa-container">
+      <div class="question">
+        <h2>Can I say "deaf people"?</h2>
+        <p class="answer">
+          If you thought this term was offensive, you are mistaken. It is the
+          way they prefer to be called. On the other hand, using deaf-mute is
+          wrong, deaf people have a voice and muteness is a different
+          disability.
+        </p>
+      </div>
+
+      <div class="question">
+        <h2>Is Sign Language made up of "Signs" or "Gestures"?</h2>
+        <p class="answer">
+          At some point you must have come across the term “gestures” when
+          referring to ASL, right? While signs are how people communicate in
+          Sign Languages, gestures are just movements people often use as part
+          of their communicative act.
+        </p>
+      </div>
+
+      <div class="question">
+        <h2>Is there a difference between Deaf and Hearing Impaired people?</h2>
+        <p class="answer">
+          From a clinical point of view, what differentiates the deaf from the
+          hearing impaired is the depth of the hearing loss. However, taking
+          into consideration only the clinical perspective is not enough, since
+          the different terms also carry an important cultural component:
+          American Sign Language.
+        </p>
+      </div>
+    </div>
+
+    <!-- services start -->
+    <div class="section__container">
+      <div class="header">
+        <h1 id="h">Services we Deliver</h1>
+      </div>
+      <div class="testimonials__grid">
+        <div class="card">
+          <p id="p" class="sername">Sign to Text</p>
+
+          <p id="p">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            cupiditate asperiores deleniti harum necessitatibus rerum iure
+            assumenda accusamus. Modi deserunt aliquam impedit et itaque commodi
+            quidem consectetur, eligendi delectus neque aperiam laboriosam
+          </p>
+        </div>
+        <div class="card">
+          <p id="p" class="sername">Text to Audio</p>
+
+          <p id="p">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            cupiditate asperiores deleniti harum necessitatibus rerum iure
+            assumenda accusamus. Modi deserunt aliquam impedit et itaque commodi
+            quidem consectetur, eligendi delectus neque aperiam laboriosam
+          </p>
+        </div>
+        <div class="card">
+          <p id="p" class="sername">Sign to Audio</p>
+
+          <p id="p">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            cupiditate asperiores deleniti harum necessitatibus rerum iure
+            assumenda accusamus. Modi deserunt aliquam impedit et itaque commodi
+            quidem consectetur, eligendi delectus neque aperiam laboriosam
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- services end -->
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="/Frontend/index.html">
+            <i class="fas fa-chevron-right"></i> Home
+          </a>
+          <!-- 
+          <a href="/Frontend/language.html">
+            <i class="fas fa-chevron-right"></i> Language
+          </a> -->
+          <a href="/Frontend/learn.html">
+            <i class="fas fa-chevron-right"></i> Learn
+          </a>
+          <a href="/Frontend/try it out.html">
+            <i class="fas fa-chevron-right"></i> Try it Out
+          </a>
+          <a href="/Frontend/blog.html">
+            <i class="fas fa-chevron-right"></i> Blog
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>Contact info</h3>
+          <a href="#"> <i class="fa-solid fa-phone-volume"></i> 6302707486 </a>
+          <a href="#"> <i class="fa-solid fa-phone-volume"></i> 9182736455 </a>
+          <a href="#">
+            <i class="fa-solid fa-envelope"></i>signospeak@gmail.com
+          </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Mumbai, India </a>
+        </div>
+
+        <div class="box">
+          <h3>Follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="#"> <i class="fab fa-pinterest"></i> Pinterest </a>
+        </div>
+      </div>
+
+      <div class="credit">&copy; 2024 SignoSpeak | All Rights Reserved</div>
+    </section>
+
+    <button id="scrollToTopBtn" title="Go to Top">Top</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
